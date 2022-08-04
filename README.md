@@ -28,23 +28,18 @@ Skin cancer is a common disease that affect a big amount of peoples.The purpose 
 # Preprocessing:
 The following preprocessing tasks are developed for each image:
 
-Visual inspection to detect images with low quality or not representative
-Image resizing: Transform images to 224x224x3
-Other to define later in order to improve model quality
+* Visual inspection to detect images with low quality or not representative
+* Image resizing: Transform images to 224x224x3
+
 
 # CNN Model:
-The idea is to develop a simple CNN model from scratch, and evaluate the performance to set a baseline. The following steps to improve the model are:
+The idea is to develop a simple CNN model from scratch, and evaluate the performance to set a baseline. The following steps are taken to improve the model:
 
 * Data augmentation: used ImageDataGenerator, scaling to avoid overfitting
 * Used  MobileNetV2 as model. 
 * For compile: as optimizer used 'adam',
                for loss used 'CategoricalCrossentropy',
                for  metricsused 'accuracy'
-
-
-# Model Evaluation:
-
-To evaluate the different models we will use ROC Curves and AUC score. To choose the correct model we will evaluate the precision and accuracy to set the threshold level that represent a good tradeoff between TPR and FPR.
 
 ## Used Language and Libraries:
 
